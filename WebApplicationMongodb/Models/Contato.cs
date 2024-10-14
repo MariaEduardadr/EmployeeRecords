@@ -12,15 +12,15 @@ namespace WebApplicationMongodb.Models
 
         public string? Id { get; set; }
         public string? Nome { get; set; }
-        public string? Endereço { get; set; }
+        public string? Endereco { get; set; }
         public int? Telefone { get; set; }
 
 
-        private ContatoContext _pessoaContextcs = new ContatoContext();
+        private ContatoContext _contatoContextcs = new ContatoContext();
 
         public List<Contato> ObeterContatos()
         {
-            return _pessoaContextcs.ObterContatos();
+            return _contatoContextcs.ObterContatos();
 
         }
 

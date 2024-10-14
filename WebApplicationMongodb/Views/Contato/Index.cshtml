@@ -3,8 +3,8 @@
 <h2>Contatos</h2>
 <h3 class="badge bg-secondary">Cadastro de contatos - Buscar</h3>
 
-<p class="text-left"><a class="btn btn-defalult" href="/Contato/Adicionar">Adicionar novo contato</a></p>
-
+ <p class="text-left"><a class="btn btn-defalult" a>Adicionar novo contato</a></p>
+ 
 <table class="table table-success table-striped">
 
     <tr>
@@ -24,21 +24,20 @@
 
     @foreach (var item in Model)
     {
-        <tr>
-          @*  <td class="text-left">
+            <tr>
+               <td class="text-left">
                 @item.Id
-            </td>
-            <td class="text-left">
+                </td>
+                <td class="text-left">
                 @item.Nome
-            </td>
-            <td>
-                @item.Endereço
-            </td>
-            <td>
+                </td>
+                <td>
+                @item.Endereco
+                </td>
+                <td>
                 @item.Telefone
-            </td>*@
-
-        </tr>
+                </td>
+            </tr>
     }
 
 </table>
