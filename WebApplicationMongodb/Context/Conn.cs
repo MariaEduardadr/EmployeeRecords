@@ -6,13 +6,13 @@ namespace WebApplicationMongodb.Context
     {
         public static readonly string Server = "mongodb://localhost:27017";
         public static readonly string Db = "Agenda";
-        public static readonly string ColletionPessoa = "pessoa";
+        public static readonly string ColletionContato = "pessoa";
 
-        public static IMongoCollection<Pessoa> AbrirColecaopessoa()
+        public static IMongoCollection<Contato> AbrirColecaoContatos()
         {
             var cli = new MongoClient(Server);
             var db = cli.GetDatabase(Db);
-            return db.GetCollection<Pessoa>(ColletionPessoa);
+            return db.GetCollection<Contato>(ColletionContato);
         }
     }
 }

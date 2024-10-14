@@ -1,9 +1,9 @@
-﻿@model List<WebApplicationMongodb.Models.Pessoa>
+﻿@model List<WebApplicationMongodb.Models.Contato>
 
 <h2>Contatos</h2>
 <h3 class="badge bg-secondary">Cadastro de contatos - Buscar</h3>
 
-<p class="text-left"><a class="btn btn-defalult" href="/Pessoa/Adicionar">Adicionar contato</a></p>
+<p class="text-left"><a class="btn btn-defalult" href="/Contato/Adicionar">Adicionar novo contato</a></p>
 
 <table class="table table-success table-striped">
 
@@ -22,7 +22,7 @@
         </th>
     </tr>
 
-    @foreach (var intem in Model)
+    @foreach (var item in Model)
     {
         <tr>
           @*  <td class="text-left">
