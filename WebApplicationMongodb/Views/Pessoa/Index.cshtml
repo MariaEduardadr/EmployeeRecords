@@ -1,0 +1,44 @@
+﻿@model List<WebApplicationMongodb.Models.Pessoa>
+
+<h2>Contatos</h2>
+<h3 class="badge bg-secondary">Cadastro de contatos - Buscar</h3>
+
+<p class="text-left"><a class="btn btn-defalult" href="/Pessoa/Adicionar">Adicionar contato</a></p>
+
+<table class="table table-success table-striped">
+
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            Nome
+        </th>
+        <th>
+            Endereço
+        </th>
+        <th>
+            Telefone
+        </th>
+    </tr>
+
+    @foreach (var intem in Model)
+    {
+        <tr>
+          @*  <td class="text-left">
+                @item.Id
+            </td>
+            <td class="text-left">
+                @item.Nome
+            </td>
+            <td>
+                @item.Endereço
+            </td>
+            <td>
+                @item.Telefone
+            </td>*@
+
+        </tr>
+    }
+
+</table>
