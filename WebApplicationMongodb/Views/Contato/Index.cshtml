@@ -3,8 +3,8 @@
 <h2>Contatos</h2>
 <h3 class="badge bg-secondary">Cadastro de contatos - Buscar</h3>
 
- <p class="text-left"><a class="btn btn-defalult" a>Adicionar novo contato</a></p>
- 
+<a class="btn btn-secondary" asp-controller="Contato" asp-action="Criar" role="button">Adicionar novo contato</a>
+<br>
 <table class="table table-success table-striped">
 
     <tr>
@@ -24,20 +24,21 @@
 
     @foreach (var item in Model)
     {
-            <tr>
-               <td class="text-left">
+        <tr>
+            <td class="text-left">
                 @item.Id
-                </td>
-                <td class="text-left">
+            </td>
+            <td class="text-left">
                 @item.Nome
-                </td>
-                <td>
+            </td>
+            <td>
                 @item.Endereco
-                </td>
-                <td>
+            </td>
+            <td>
                 @item.Telefone
-                </td>
-            </tr>
+            </td>
+        </tr>
     }
 
 </table>
+
