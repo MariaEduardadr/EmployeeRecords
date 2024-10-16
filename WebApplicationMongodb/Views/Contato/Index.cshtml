@@ -5,7 +5,7 @@
 
 <p class="text-left"><a  class="btn btn-outline-success" href="./Contato/Adicionar">Adicionar novo contato</a></p>
 
-<table class="table table-success table-striped">
+<table class="table table-success table-light">
 
     <tr>
         <th>
@@ -20,6 +20,9 @@
         <th>
             Telefone
         </th>
+        <th>
+           Operações
+        </th>
         
     </tr>
 
@@ -32,11 +35,16 @@
             <td class="text-left">
                 @item.Nome
             </td>
-            <td>
+                <td>
                 @item.Endereco
             </td>
             <td>
                 @item.Telefone
+            </td>
+            <td>
+                <a href="./Contato/Visualizar/@item.Id" class="text-primary bi-eye"></a>
+                 <a href="./Contato/Alterar/@item.Id" class="text-sucess bi-pencil"></a>
+                  <a href="./Contato/Excluir/@item.Id" class="text-danger bi-trash"></a>
             </td>
         </tr>
     }

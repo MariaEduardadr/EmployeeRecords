@@ -6,7 +6,7 @@ namespace WebApplicationMongodb.Context
     {
         public static readonly string Server = "mongodb://localhost:27017";
         public static readonly string Db = "Agenda";
-        public static readonly string ColletionContato = "pessoa";
+        public static readonly string ColletionContato = "Contatos";
 
         public static IMongoCollection<Contato> AbrirColecaoContatos()
         {
