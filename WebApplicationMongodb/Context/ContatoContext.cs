@@ -13,5 +13,19 @@ namespace WebApplicationMongodb.Context
             return colletionContatos.Find(filter).ToList();
         }
 
+        public bool Inserir(Contato contato)
+        {
+            try
+            {
+                var colletionContatos = Conn.AbrirColecaoContatos();
+                colletionContatos.InsertOne(contato);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
     }
 }

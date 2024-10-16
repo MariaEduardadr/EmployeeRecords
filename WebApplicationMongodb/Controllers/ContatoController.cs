@@ -12,5 +12,16 @@ namespace WebApplicationMongodb.Controllers
 
             return View(contatosList);
         }
+
+        public IActionResult Adicionar()
+        {
+            return View();
+        }
+
+        public IActionResult Inserir(Contato contato)
+        {
+            var result = contato.Inserir(contato);
+            return RedirectToAction("Index", "Contato");
+        }
     }
 }

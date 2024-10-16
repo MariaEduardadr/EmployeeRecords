@@ -3,8 +3,8 @@
 <h2>Contatos</h2>
 <h3 class="badge bg-secondary">Cadastro de contatos - Buscar</h3>
 
-<a class="btn btn-secondary" asp-controller="Contato" asp-action="Criar" role="button">Adicionar novo contato</a>
-<br>
+<p class="text-left"><a  class="btn btn-outline-success" href="./Contato/Adicionar">Adicionar novo contato</a></p>
+
 <table class="table table-success table-striped">
 
     <tr>
@@ -20,6 +20,7 @@
         <th>
             Telefone
         </th>
+        
     </tr>
 
     @foreach (var item in Model)

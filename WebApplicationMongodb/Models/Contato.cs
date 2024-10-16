@@ -16,12 +16,17 @@ namespace WebApplicationMongodb.Models
         public int? Telefone { get; set; }
 
 
-        private ContatoContext _contatoContextcs = new ContatoContext();
+        private ContatoContext _contatoContext = new ContatoContext();
 
         public List<Contato> ObeterContatos()
         {
-            return _contatoContextcs.ObterContatos();
+            return _contatoContext.ObterContatos();
 
+        }
+
+        public bool Inserir(Contato contato)
+        {
+            return _contatoContext.Inserir(contato);
         }
 
     }
