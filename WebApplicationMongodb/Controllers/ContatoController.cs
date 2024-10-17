@@ -17,10 +17,20 @@ namespace WebApplicationMongodb.Controllers
         {
             return View();
         }
+        public IActionResult Alterar(string id)
+        {
+            var contatos = contato.ObeterContato(id);
+            return View(contatos);
+        }
 
         public IActionResult Inserir(Contato contato)
         {
             var result = contato.Inserir(contato);
+            return RedirectToAction("Index", "Contato");
+        }
+        public IActionResult Atualizar(Contato contato)
+        {
+            var result = contato.Atualizar(contato); 
             return RedirectToAction("Index", "Contato");
         }
     }

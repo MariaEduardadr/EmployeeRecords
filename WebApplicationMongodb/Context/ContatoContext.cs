@@ -27,5 +27,26 @@ namespace WebApplicationMongodb.Context
             }
         }
 
+        public Contato ObterContato(string id)
+        {
+            var colletionContatos = Conn.AbrirColecaoContatos();
+            var filter = Builders<Contato>.Filter.Eq(x => x.Id, id);
+            return colletionContatos.Find(filter).FirstOrDefault();
+        }
+
+        public bool Atualizar(Contato contato)
+        {
+            try
+            {
+                var colletionContatos = Conn.AbrirColecaoContatos();
+                var filter = Builders<Contato>.Filter.Eq(x => x.Id, contato.Id);
+                colletionContatos.ReplaceOne(filter, contato);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

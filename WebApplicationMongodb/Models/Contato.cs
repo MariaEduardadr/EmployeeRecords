@@ -33,5 +33,14 @@ namespace WebApplicationMongodb.Models
             return _contatoContext.Inserir(contato);
         }
 
+        public Contato ObeterContato(string id) 
+        {
+            return _contatoContext.ObterContato(id);
+        }
+        public bool Atualizar(Contato contato)
+        {
+            return _contatoContext.Atualizar(contato);
+        }
+
     }
 }
