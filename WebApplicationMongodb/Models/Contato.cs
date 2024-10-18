@@ -42,5 +42,10 @@ namespace WebApplicationMongodb.Models
             return _contatoContext.Atualizar(contato);
         }
 
+        public Contato Visualizar(string id)
+        {
+            return _contatoContext.ObterContato(id);
+        }
+
     }
 }

@@ -1,5 +1,78 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@model WebApplicationMongodb.Models.Contato
+
+<h3>Consultar Dados do Funcionário</h3>
+
+@using (Html.BeginForm("Vizualizar", "Contato", FormMethod.Post, new { id = "formContatoVizualizae", name = "formContatoVizualar" }))
+{
+
+
+
+    <div class="card">
+        <h5 class="card-header">
+            @Html.TextBoxFor(Model => Model.Nome, new { @class = "form-control border-0 bg-success", @readonly = "true"})
+        </h5>
+        <div class="card-body">
+            @*ID*@
+            <div class="row col-md-offset-3 mt-2" id="textVizualizar">
+                @Html.LabelFor(Model => Model.Id, new { @class = "col-form-label text-right" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(Model => Model.Id, new { @class = "form-control border-0 bg-light", @readonly = "true" })
+            </div>
+            @*CPF*@
+            <div class="row col-md-offset-3 mt-2" id="textVizualizar">
+                @Html.LabelFor(Model => Model.CPF, new { @class = "col-form-label text-right" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(Model => Model.CPF, new { @class = "form-control border-0 bg-light", @readonly = "true"})
+            </div>
+            @*CARGO*@
+            <div class="row col-md-offset-3 mt-2" id="textVizualizar">
+                @Html.LabelFor(Model => Model.Cargo, new { @class = "col-form-label text-right" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(Model => Model.Cargo, new { @class = "form-control border-0 bg-light", @readonly = "true"})
+            </div>
+            @*SALÁRIO*@
+            <div class="row col-md-offset-3 mt-2" id="textVizualizar">
+                @Html.LabelFor(Model => Model.Salário, new { @class = "col-form-label text-right" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(Model => Model.Salário, new { @class = "form-control border-0 bg-light",  @readonly = "true"})
+            </div>
+            @*ENDEREÇO*@
+            <div class="row col-md-offset-3 mt-2" id="textVizualizar">
+                @Html.LabelFor(Model => Model.Endereco, new { @class = "col-form-label text-right" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(Model => Model.Endereco, new { @class = "form-control border-0 bg-light",  @readonly = "true"})
+            </div>
+            @*EMAIL*@
+            <div class="row col-md-offset-3 mt-2" id="textVizualizar">
+                @Html.LabelFor(Model => Model.Email, new { @class = "col-form-label text-right" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(Model => Model.Email, new { @class = "form-control border-0 bg-light" , @readonly = "true"})
+            </div>
+            @*TELEFONE*@
+            <div class="row col-md-offset-3 mt-2" id="textVizualizar">
+                @Html.LabelFor(Model => Model.Telefone, new { @class = "col-form-label text-right" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(Model => Model.Telefone, new { @class = "form-control border-0 bg-light", @readonly = "true"})
+            </div>
+
+        </div>
+    </div>
+
+
+  
+
+    @*SALVAR*@
+    <br />
+
+    <div class="button mt-2">
+        <a class="btn btn-success" asp-controller="Contato" asp-action="Index" role="button">Voltar</a>
+    </div>
+
 }

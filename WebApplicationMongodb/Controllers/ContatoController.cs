@@ -33,5 +33,11 @@ namespace WebApplicationMongodb.Controllers
             var result = contato.Atualizar(contato); 
             return RedirectToAction("Index", "Contato");
         }
+
+        public IActionResult Visualizar(string id)
+        {
+            var contatos = contato.ObeterContato(id);
+            return View(contatos);
+        }
     }
 }
