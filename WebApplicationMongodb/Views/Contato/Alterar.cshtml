@@ -1,8 +1,8 @@
 ﻿@model WebApplicationMongodb.Models.Contato
 
-<h3>Alterar Contato</h3>
+<h3>Alterar Dados do Funcionário</h3>
 
-@using (Html.BeginForm("Altualizar", "Contato", FormMethod.Post, new { id = "formContatoAlterar", name = "formContatoAlterar" }))
+@using (Html.BeginForm("Alterar", "Contato", FormMethod.Post, new { id = "formContatoAlterar", name = "formContatoAlterar" }))
 {
 
     @*ID*@
@@ -68,7 +68,7 @@
     <br />
 
     <div class="button mt-2">
-        <button type="submit" class="btn btn-success" >Salvar</button>
+        <button type="submit" class="btn btn-success" asp-controller="Contato" asp-action="Index">Salvar</button>
     </div>
 
 }

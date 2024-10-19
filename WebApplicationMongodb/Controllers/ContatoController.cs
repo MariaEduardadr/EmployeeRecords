@@ -30,7 +30,7 @@ namespace WebApplicationMongodb.Controllers
         }
         public IActionResult Atualizar(Contato contato)
         {
-            var result = contato.Atualizar(contato); 
+            var result = contato.Atualizar(contato);
             return RedirectToAction("Index", "Contato");
         }
 
@@ -39,5 +39,17 @@ namespace WebApplicationMongodb.Controllers
             var contatos = contato.ObeterContato(id);
             return View(contatos);
         }
+
+        //public IActionResult MostrarExluir(string id)
+        //{
+        //    var contatos = contato.ObeterContato(id);
+        //    return View("Views/Contato/Excluir.cshtml",contatos);
+        //}
+
+        //public IActionResult Excluir(Contato contatoo)
+        //{
+        //    var result = contato.Excluir(contatoo);
+        //    return RedirectToAction("Index", "Contato");
+        //}
     }
 }

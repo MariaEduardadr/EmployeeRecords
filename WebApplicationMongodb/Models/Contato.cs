@@ -47,5 +47,10 @@ namespace WebApplicationMongodb.Models
             return _contatoContext.ObterContato(id);
         }
 
+        public bool Excluir(Contato contato)
+        {
+            return _contatoContext.Excluir(contato);
+        }
+
     }
 }
