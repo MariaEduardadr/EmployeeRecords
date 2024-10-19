@@ -1,1 +1,76 @@
-﻿
+﻿@model WebApplicationMongodb.Models.Contato
+
+<h3>Excluir Dados do Funcionário</h3>
+
+@using (Html.BeginForm("Excluir", "Contato", FormMethod.Post, new { id = "formContatoExcluir", name = "formContaExcluir" }))
+{
+
+    @*ID*@
+    <div class="row col-md-offset-3 mt-2">
+        @Html.LabelFor(Model => Model.Id, new { @class = "col-form-label text-right" })
+    </div>
+    <div class="col-sm-4">
+        @Html.TextBoxFor(Model => Model.Id, new { @class = "form-control", @readonly = "true" })
+    </div>
+    @*NOME*@
+    <div class="row col-md-offset-3 mt-2">
+        @Html.LabelFor(Model => Model.Nome, new { @class = "col-form-label text-right" })
+    </div>
+    <div class="col-sm-4">
+        @Html.TextBoxFor(Model => Model.Nome, new { @class = "form-control"})
+    </div>
+
+    @*CPF*@
+    <div class="row col-md-offset-3 mt-2">
+        @Html.LabelFor(Model => Model.CPF, new { @class = "col-form-label text-right" })
+    </div>
+    <div class="col-sm-4">
+        @Html.TextBoxFor(Model => Model.CPF, new { @class = "form-control"})
+    </div>
+    @*CARGO*@
+    <div class="row col-md-offset-3 mt-2">
+        @Html.LabelFor(Model => Model.Cargo, new { @class = "col-form-label text-right" })
+    </div>
+    <div class="col-sm-4">
+        @Html.TextBoxFor(Model => Model.Cargo, new { @class = "form-control"})
+    </div>
+    @*SALÁRIO*@
+    <div class="row col-md-offset-3 mt-2">
+        @Html.LabelFor(Model => Model.Salário, new { @class = "col-form-label text-right" })
+    </div>
+    <div class="col-sm-4">
+        @Html.TextBoxFor(Model => Model.Salário, new { @class = "form-control"})
+    </div>
+    @*ENDEREÇO*@
+    <div class="row col-md-offset-3 mt-2">
+        @Html.LabelFor(Model => Model.Endereco, new { @class = "col-form-label text-right" })
+    </div>
+    <div class="col-sm-4">
+        @Html.TextBoxFor(Model => Model.Endereco, new { @class = "form-control"})
+    </div>
+    @*EMAIL*@
+    <div class="row col-md-offset-3 mt-2">
+        @Html.LabelFor(Model => Model.Email, new { @class = "col-form-label text-right" })
+    </div>
+    <div class="col-sm-4">
+        @Html.TextBoxFor(Model => Model.Email, new { @class = "form-control"})
+    </div>
+    @*TELEFONE*@
+    <div class="row col-md-offset-3 mt-2">
+        @Html.LabelFor(Model => Model.Telefone, new { @class = "col-form-label text-right" })
+    </div>
+    <div class="col-sm-4">
+        @Html.TextBoxFor(Model => Model.Telefone, new { @class = "form-control"})
+    </div>
+
+
+    @*SALVAR*@
+    <br />
+
+    <div class="button mt-2">
+        <button type="submit" class="btn btn-danger">Excluir</button>
+        
+        <a class="btn btn-primary" asp-controller="Contato" asp-action="Index" role="button">Voltar</a>
+    </div>
+
+}

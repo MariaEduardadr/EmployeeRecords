@@ -49,5 +49,19 @@ namespace WebApplicationMongodb.Context
             }
         }
 
+        public bool Excluir(Contato contato)
+        {
+            try
+            {
+                var colletionContatos = Conn.AbrirColecaoContatos();
+                colletionContatos.DeleteOne(p => p.Id == contato.Id);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
     }
 }

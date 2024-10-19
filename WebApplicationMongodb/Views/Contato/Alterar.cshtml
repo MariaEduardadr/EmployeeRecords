@@ -2,7 +2,7 @@
 
 <h3>Alterar Dados do Funcionário</h3>
 
-@using (Html.BeginForm("Alterar", "Contato", FormMethod.Post, new { id = "formContatoAlterar", name = "formContatoAlterar" }))
+@using (Html.BeginForm("Altualizar", "Contato", FormMethod.Post, new { id = "formContatoAlterar", name = "formContatoAlterar" }))
 {
 
     @*ID*@
@@ -68,7 +68,9 @@
     <br />
 
     <div class="button mt-2">
-        <button type="submit" class="btn btn-success" asp-controller="Contato" asp-action="Index">Salvar</button>
+        <button type="submit" class="btn btn-success" >Salvar</button>
+        
+        <a class="btn btn-primary" asp-controller="Contato" asp-action="Index" role="button">Voltar</a>
     </div>
 
 }

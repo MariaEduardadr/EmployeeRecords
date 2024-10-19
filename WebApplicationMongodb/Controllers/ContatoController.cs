@@ -40,6 +40,16 @@ namespace WebApplicationMongodb.Controllers
             return View(contatos);
         }
 
+        public IActionResult MostrarExcluir(string id)
+        {
+            var contatos = contato.ObeterContato(id);
+            return View("Views/Contato/Excluir.cshtml", contatos);
+        }
     
+        public IActionResult Excluir(Contato contato)
+        {
+            var result = contato.Excluir(contato);
+            return RedirectToAction("Index", "Contato");
+        }
     }
 }
