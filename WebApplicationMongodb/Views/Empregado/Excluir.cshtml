@@ -1,8 +1,8 @@
-﻿@model WebApplicationMongodb.Models.Contato
+﻿@model WebApplicationMongodb.Models.Empregado
 
 <h3>Excluir Dados do Funcionário</h3>
 
-@using (Html.BeginForm("Excluir", "Contato", FormMethod.Post, new { id = "formContatoExcluir", name = "formContaExcluir" }))
+@using (Html.BeginForm("Excluir", "Empregado", FormMethod.Post, new { id = "formEmpregadoExcluir", name = "formEmpregadoExcluir" }))
 {
 
     @*ID*@
@@ -69,8 +69,8 @@
 
     <div class="button mt-2">
         <button type="submit" class="btn btn-danger">Excluir</button>
-        
-        <a class="btn btn-primary" asp-controller="Contato" asp-action="Index" role="button">Voltar</a>
+
+        <a class="btn btn-primary" asp-controller="Empregado" asp-action="Index" role="button">Voltar</a>
     </div>
 
 }

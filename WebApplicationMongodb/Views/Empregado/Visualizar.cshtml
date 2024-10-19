@@ -1,8 +1,8 @@
-﻿@model WebApplicationMongodb.Models.Contato
+﻿@model WebApplicationMongodb.Models.Empregado
 
 <h3>Consultar Dados do Funcionário</h3>
 
-@using (Html.BeginForm("Vizualizar", "Contato", FormMethod.Post, new { id = "formContatoVizualizae", name = "formContatoVizualar" }))
+@using (Html.BeginForm("Vizualizar", "Empregado", FormMethod.Post, new { id = "formEmpregadoVizualizar", name = "formEmpregadoVizualar" }))
 {
 
 
@@ -72,7 +72,7 @@
     <br />
 
     <div class="button mt-2">
-        <a class="btn btn-primary" asp-controller="Contato" asp-action="Index" role="button">Voltar</a>
+        <a class="btn btn-primary" asp-controller="Empregado" asp-action="Index" role="button">Voltar</a>
     </div>
 
 }

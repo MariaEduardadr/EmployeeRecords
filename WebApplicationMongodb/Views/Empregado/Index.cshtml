@@ -1,12 +1,12 @@
-﻿@model List<WebApplicationMongodb.Models.Contato>
+﻿@model List<WebApplicationMongodb.Models.Empregado>
 
 <h2>Funcionários</h2>
 
 
-<p class="text-left"><a class="btn btn-outline-success" href="./Contato/MostrarInserir">Adicionar novo funcionário</a></p>
+<p class="text-left"><a class="btn btn-outline-success" href="/Empregado/MostrarInserir">Adicionar novo funcionário</a></p>
 <br/>
 
-@using (Html.BeginForm("ObterContatos", "Contato", FormMethod.Post, new { id = "formContatoBuscar", name = "formContatoBuscar" }))
+@using (Html.BeginForm("ObterEmpregados", "Empregado", FormMethod.Post, new { id = "formEmpregadoBuscar", name = "formEmpregadoBuscar" }))
 {
     <div class="row col-md-offset-3 mb-3">
         <div class="col-sm-4">
@@ -17,8 +17,6 @@
         </div>
     </div>
 }
-
-
 
 <table class="table table-success table-light">
 
@@ -81,12 +79,11 @@
                 @item.Telefone
             </td>
             <td>
-                <a href="/Contato/Visualizar/@item.Id" title="Visualizar" class="text-primary bi-eye"></a>
-                <a href="./Contato/MostrarAtualizar/@item.Id" title="Alterar" class="text-success bi-pencil"></a>
-                <a href="/Contato/MostrarExcluir/@item.Id" title="Excluir" class="text-danger bi-trash"></a>
+                <a href="/Empregado/Visualizar/@item.Id" title="Visualizar" class="text-primary bi-eye"></a>
+                <a href="/Empregado/MostrarAtualizar/@item.Id" title="Alterar" class="text-success bi-pencil"></a>
+                <a href="/Empregado/MostrarExcluir/@item.Id" title="Excluir" class="text-danger bi-trash"></a>
             </td>
         </tr>
     }
-
 </table>
 

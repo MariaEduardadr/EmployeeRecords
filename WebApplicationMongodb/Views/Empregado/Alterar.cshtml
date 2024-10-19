@@ -1,8 +1,8 @@
-﻿@model WebApplicationMongodb.Models.Contato
+﻿@model WebApplicationMongodb.Models.Empregado
 
-<h3>Cadastrar funcionário</h3>
-
-@using (Html.BeginForm("Inserir", "Contato", FormMethod.Post, new { id = "formContatoAdicionar", name = "formContatoAdicionar" }))
+<h3>Alterar Dados do Funcionário</h3>
+                        
+@using (Html.BeginForm("Atualizar", "Empregado", FormMethod.Post, new { id = "formEmpregadoAlterar", name = "formEmpregadoAlterar" }))
 {
 
     @*ID*@
@@ -10,7 +10,7 @@
         @Html.LabelFor(Model => Model.Id, new { @class = "col-form-label text-right" })
     </div>
     <div class="col-sm-4">
-        @Html.TextBoxFor(Model => Model.Id, new { @class = "form-control", @disabled = "disabled" })
+        @Html.TextBoxFor(Model => Model.Id, new { @class = "form-control", @readonly = "true" })
     </div>
     @*NOME*@
     <div class="row col-md-offset-3 mt-2">
@@ -63,13 +63,14 @@
         @Html.TextBoxFor(Model => Model.Telefone, new { @class = "form-control"})
     </div>
 
+   
     @*SALVAR*@
     <br />
 
     <div class="button mt-2">
+
         <button type="submit" class="btn btn-success">Salvar</button>
-        
-        <a class="btn btn-primary" asp-controller="Contato" asp-action="Index" role="button">Voltar</a>
+        <a class="btn btn-primary" asp-controller="Empregado" asp-action="Index" role="button">Voltar</a>
     </div>
 
 }
