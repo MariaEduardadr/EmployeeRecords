@@ -28,6 +28,12 @@ namespace WebApplicationMongodb.Models
 
         }
 
+        public List<Contato> ObeterContatos(string texto)
+        {
+            return _contatoContext.ObterContatos(texto);
+
+        }
+
         public bool Inserir(Contato contato)
         {
             return _contatoContext.Inserir(contato);

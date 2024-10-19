@@ -8,19 +8,23 @@ namespace WebApplicationMongodb.Controllers
         public Contato contato = new Contato();
         public IActionResult Index()
         {
+            ViewBag.Texto = "";
             var contatosList = contato.ObeterContatos();
 
             return View(contatosList);
         }
 
-        public IActionResult Adicionar()
+        public IActionResult ObterContatos(string texto)
         {
-            return View();
+            ViewBag.Texto = texto;
+            var contatosList = contato.ObeterContatos(texto);
+
+            return View("Views/Contato/Index.cshtml",contatosList);
         }
-        public IActionResult Alterar(string id)
+
+        public IActionResult MostrarInserir()
         {
-            var contatos = contato.ObeterContato(id);
-            return View(contatos);
+            return View("Views/Contato/Adicionar.cshtml");
         }
 
         public IActionResult Inserir(Contato contato)
@@ -28,6 +32,12 @@ namespace WebApplicationMongodb.Controllers
             var result = contato.Inserir(contato);
             return RedirectToAction("Index", "Contato");
         }
+        public IActionResult MostrarAtualizar(string id)
+        {
+            var contatos = contato.ObeterContato(id);
+            return View("Views/Contato/Alterar.cshtml", contatos);
+        }
+
         public IActionResult Atualizar(Contato contato)
         {
             var result = contato.Atualizar(contato);
@@ -51,5 +61,6 @@ namespace WebApplicationMongodb.Controllers
             var result = contato.Excluir(contato);
             return RedirectToAction("Index", "Contato");
         }
+
     }
 }

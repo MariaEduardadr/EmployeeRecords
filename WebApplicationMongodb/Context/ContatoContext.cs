@@ -13,6 +13,14 @@ namespace WebApplicationMongodb.Context
             return colletionContatos.Find(filter).ToList();
         }
 
+
+        public List<Contato> ObterContatos(string texto)
+        {
+            var colletionContatos = Conn.AbrirColecaoContatos();
+            var filter = Builders<Contato>.Filter.Regex("Nome", new MongoDB.Bson.BsonRegularExpression(".*" + texto + ".*"));
+            return colletionContatos.Find(filter).ToList();
+        }
+
         public bool Inserir(Contato contato)
         {
             try
