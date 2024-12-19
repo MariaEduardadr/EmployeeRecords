@@ -1,4 +1,4 @@
-﻿# WebApplicationMongodb
+﻿# WebApplicationMongodb 💼🖥️
 
 >  WebApplicationMongodb é um Sistema de Cadastro de funcionários uma aplicação que permite gerenciar as informações dos funcionários de uma organização. Ele pode incluir funcionalidades como adicionar, editar, visualizar e excluir registros de funcionários.
 
@@ -18,36 +18,22 @@ Aplicação <strong>CRUD(Create, Read, Update, Delete</strong> para gerenciament
 ## Configurações 
 > Configurações para execução! Para mais instruções sobre como configurar e usar este projeto, [clique aqui](./instruções/README.md).
 
-## Pré-requisitos
-- .NET Core SDK 6.0 ou superior
-- MongoDB instalado e em execução
-## Instalação
-1. Clone o repositório:
-```
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
-```
-2. Restaure as dependências:
-```
-dotnet restore
-```
-3. Configuração com o MongoDB
-Crie um arquivo appsettings.json na raiz do projeto com as seguintes configurações com json:
-```
-{
-  "ConnectionStrings": {
-    "MongoDb": "mongodb://localhost:27017"
-  },
-  "DatabaseName": "sua_base_de_dados"
-}
-```
-4. Execução
-````
-dotnet run
-````
+## 🔗🇺🇸 
 
+> WebApplicationMongodb is an Employee Registration System, an application that allows managing employee information of an organization. It can include functionalities such as adding, editing, viewing, and deleting employee records.
 
+Application <strong>CRUD (Create, Read, Update, Delete)</strong> for managing registration records in a MongoDB database.
 
+## Examples of Use
+- Access the employee registration page.
+- Add, edit, delete employee records.
+- View the list of registered employees.
 
+## 🛠 Technologies Used
+- C Sharp
+- MongoDB
+- ASP.NET MVC
+- Git and Github
 
-
+## Settings
+> Configuration for execution! For more instructions on how to set up and use this project, [click here](./instruções/README.md).
