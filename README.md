@@ -1,6 +1,6 @@
 ﻿# WebApplicationMongodb
 
-> Sistema de Cadastro de funcionários 
+>  WebApplicationMongodb é um Sistema de Cadastro de funcionários uma aplicação que permite gerenciar as informações dos funcionários de uma organização. Ele pode incluir funcionalidades como adicionar, editar, visualizar e excluir registros de funcionários.
 
 Aplicação <strong>CRUD(Create, Read, Update, Delete</strong> para gerenciamento de registros de cadastro em um banco de dados MongoDB.
 
