@@ -4,6 +4,11 @@
 
 Aplicação <strong>CRUD(Create, Read, Update, Delete</strong> para gerenciamento de registros de cadastro em um banco de dados MongoDB.
 
+## Exemplos de Uso
+- Acesso a página de cadastro de funcinários.
+- Adicionar, editar, excluir registros de funcionários.
+- Consultar a lista de funcionários cadastrados.
+
 ## 🛠 Tecnologias Utilizadas
 - C Sharp
 - MongoDB
@@ -11,7 +16,7 @@ Aplicação <strong>CRUD(Create, Read, Update, Delete</strong> para gerenciament
 - Git e Github
 
 ## Configurações 
-> Configurações para execução
+> Configurações para execução! Para mais instruções sobre como configurar e usar este projeto, [clique aqui](./instruções/README.md).
 
 ## Pré-requisitos
 - .NET Core SDK 6.0 ou superior
@@ -40,10 +45,7 @@ Crie um arquivo appsettings.json na raiz do projeto com as seguintes configuraç
 ````
 dotnet run
 ````
-## Exemplos de Uso
-- Acesso a página de cadastro de funcinários.
-- Adicionar, editar, excluir registros de funcionários.
-- Consultar a lista de funcionários cadastrados.
+
 
 
 
