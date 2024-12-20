@@ -16,7 +16,7 @@ Aplicação <strong>CRUD(Create, Read, Update, Delete</strong> para gerenciament
 - Git e Github
 
 ## Configurações 
-> Configurações para execução! Para mais instruções sobre como configurar e usar este projeto, [clique aqui](./instruções/README2.md).
+> Configurações para execução! Para mais instruções sobre como configurar e usar este projeto, [clique aqui](./instruções/README.md).
 
 ## 🔗🇺🇸 
 
@@ -36,4 +36,4 @@ Application <strong>CRUD (Create, Read, Update, Delete)</strong> for managing re
 - Git and Github
 
 ## Settings
-> Configuration for execution! For more instructions on how to set up and use this project, [click here](./instruções/README.md).
+> Configuration for execution! For more instructions on how to set up and use this project, [click here](./instruções/readme.md).
