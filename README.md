@@ -1,8 +1,8 @@
-﻿# WebApplicationMongodb 
+﻿# EmployeeRecords
 
 ## 🔗🇧🇷
 
->  WebApplicationMongodb é um Sistema de Cadastro de funcionários uma aplicação que permite gerenciar as informações dos funcionários de uma organização. Ele pode incluir funcionalidades como adicionar, editar, visualizar e excluir registros de funcionários.
+>  EmployeeRecords é um Sistema de Cadastro de funcionários uma aplicação que permite gerenciar as informações dos funcionários de uma organização. Ele pode incluir funcionalidades como adicionar, editar, visualizar e excluir registros de funcionários.
 
 Aplicação <strong>CRUD(Create, Read, Update, Delete</strong> para gerenciamento de registros de cadastro em um banco de dados MongoDB.
 
@@ -22,7 +22,7 @@ Aplicação <strong>CRUD(Create, Read, Update, Delete</strong> para gerenciament
 
 ## 🔗🇺🇸 
 
-> WebApplicationMongodb is an Employee Registration System, an application that allows managing employee information of an organization. It can include functionalities such as adding, editing, viewing, and deleting employee records.
+> EmployeeRecords is an Employee Registration System, an application that allows managing employee information of an organization. It can include functionalities such as adding, editing, viewing, and deleting employee records.
 
 Application <strong>CRUD (Create, Read, Update, Delete)</strong> for managing registration records in a MongoDB database.
 
